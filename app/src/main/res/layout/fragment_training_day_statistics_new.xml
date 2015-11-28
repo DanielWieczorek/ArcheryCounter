@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@android:color/holo_green_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newDayText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"
+
+        android:drawablePadding="-15sp"
+        android:text="Add new \nTraining Day"
+        android:lines="3"
+        android:longClickable="true"
+        android:singleLine="false"
+        android:textAlignment="gravity"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:typeface="normal"
+        android:visibility="visible"
+        android:elegantTextHeight="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/newDayImage"
+        android:background="@android:drawable/ic_input_get"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="false"
+        android:backgroundTint="@color/colorAccent" />
+</RelativeLayout>
